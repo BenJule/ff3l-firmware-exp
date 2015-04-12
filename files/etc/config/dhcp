@@ -33,7 +33,7 @@ config dnsmasq freifunk
 	option add_local_domain '0'
 	option add_local_hostname '0'
 	option bind_dynamic '1'
-	list interface 'br-freifunk'
+	list interface 'br-ff3l'
 	list notinterface 'lo'
 
 config odhcpd 'odhcpd'

@@ -349,9 +349,9 @@ update_03_to_04()
 	uci set network.globals.ula_prefix="$prefix"
 	echo "192.168.132.1 node" >> /etc/hosts
 
-	echo "(I) Disable forwarding on br-freifunk/br-lan."
+	echo "(I) Disable forwarding on br-ff3l/br-lan."
 	echo -e "\n#disable forwarding in roder for router-solicitations to be send for these interfaces" >> /etc/sysctl.conf
-	echo "net.ipv6.conf.br-freifunk.forwarding=0" >> /etc/sysctl.conf
+	echo "net.ipv6.conf.br-ff3l.forwarding=0" >> /etc/sysctl.conf
 	echo "net.ipv6.conf.br-lan.forwarding=0" >> /etc/sysctl.conf
 
 	echo "(I) Remove dummy interfaces."
@@ -562,7 +562,7 @@ update_041_to_042()
 	uci commit dhcp
 
 	sed -i "/#disable forwarding.*/d" /etc/sysctl.conf
-	sed -i "/net.ipv6.conf.br-freifunk.forwarding.*/d" /etc/sysctl.conf
+	sed -i "/net.ipv6.conf.br-ff3l.forwarding.*/d" /etc/sysctl.conf
 	sed -i "/net.ipv6.conf.br-lan.forwarding.*/d" /etc/sysctl.conf
 
 	cat >> /etc/sysctl.conf <<  EOF

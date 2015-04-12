@@ -1,6 +1,6 @@
 
 config interface
-	option ifname 'br-freifunk'
+	option ifname 'br-ff3l'
 	list prefix 'fdef:17a0:ffb1:300::/64'
 
 config interface

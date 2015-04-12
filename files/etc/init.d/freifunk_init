@@ -83,7 +83,7 @@ ula_addr() {
 	echo "${prefix%%::*}:${mac%?}"
 }
 
-#set the ULA IPv6 address for br-freifunk based on the MAC
+#set the ULA IPv6 address for br-ff3l based on the MAC
 set_ula() {
 	local prefix=$(uci get network.globals.ula_prefix)
 	local mac=$(uci get network.freifunk.macaddr)
