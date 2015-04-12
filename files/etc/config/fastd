@@ -9,7 +9,7 @@ config fastd 'default'
 	option hide_mac_addresses '1'
 	option status_socket '/var/run/fastd.status'
 	option mode 'tap'
-	option interface 'fastd_mesh'
+	option interface 'mesh-vpn'
 	option mtu 1406
 	option forward 0
 	option secret '' #set by /etc/init.d/freifunk_setup
