@@ -6,8 +6,8 @@ config branch stable
 	# The branch name given in the manifest
 	option name 'stable'
 
-	list mirror 'http://[fdef:17a0:ffb1:300::4]/freifunk/firmware/autoupdater'
-	list mirror 'http://[fdef:17a0:ffb1:300::5]/freifunk/firmware/autoupdater'
+	list mirror 'http://[fdc7:3c9d:b889:a272::1:0000]/freifunk/firmware/autoupdater'
+
 	
 	#Delay excution of the autoupdater for at most fetch_delay seconds.
 	#This spreads the load of the server when all nodes start
@@ -20,10 +20,7 @@ config branch stable
 	option apply_delay 0
 
 	# Minimum valid signatures required to perform the update
-	option good_signatures 2
+	option good_signatures 1
 
 	# List of public keys
-	list pubkey '371d244af00790e1d8e0da61d5c01ab32457374e7c33c0bddd334333a91a7a18' #bodems
-	list pubkey '4320668c6858faa064d2f205c538bafb7b042600eef6a7503258d7355d01e4f8' #mwarning
-	list pubkey '4d379d4a9d73260785c013f61d5e483725c1272f385a25a60fc53e1784b89f8f' #iwok
-	list pubkey 'b3d6eeaf8995a4a445be482e4da49402da62d44f125638905fdb8b8c0582f939' #bjoern
+	list pubkey 'd1bfa9459ee1d1a0e774ee5343221cadb98d860603a5330e8e50ee9779e863d4' #benlue
