@@ -1,4 +1,4 @@
-Firmware for Freifunk Bielefeld
+Firmware for Freifunk-3Ländereck
 =========================
 
 The firmware turns a common wireless router into a mesh networking device.
@@ -20,7 +20,7 @@ Build commands for the console:
     ./scripts/feeds update -a
     ./scripts/feeds install -a
     
-    git clone https://github.com/freifunk-bielefeld/firmware.git
+    git clone https://github.com/BenJule/ff3l-firmware-exp.git
     cp -rf firmware/files firmware/package .
     git am --whitespace=nowarn firmware/patches/openwrt/*.patch
     cd feeds/routing && git am --whitespace=nowarn ../../firmware/patches/routing/*.patch && cd -
@@ -32,7 +32,7 @@ Build commands for the console:
 
 Now select the right "Target System" and "Target Profile" for your AP model:
 
-For example, for the TL-WR841ND, select:
+For example, TL-WR841ND, select:
 * `Target System => Atheros AR7xxx/AR9xxx`
 * `Target Profile => TP-LINK TL-WR841ND`
 
